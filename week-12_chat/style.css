@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-image: url("avatars/BG_pink-flowers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+h2 {
+  color: #94066b;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  padding: 2rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.form_name_wrapper input {
+  width: 100%;
+}
+.form_name_wrapper {
+  padding-right: 1rem;
+}
+
+.form_label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+input,
+textarea {
+  margin-top: 0.5rem;
+  background-color: #f8e0f1;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  outline: none;
+}
+input {
+  height: 1.5rem;
+  padding-left: 0.5rem;
+}
+textarea {
+  resize: none;
+  padding: 0.5rem;
+}
+h1,
+.wrapper_form,
+.wrapper_chat {
+  margin-left: 2rem;
+}
+.wrapper_chat {
+  margin-right: 2rem;
+}
+
+#form_send {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  background-color: #94066b;
+  margin-top: 3rem;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  border: transparent;
+}
+
+.form_username {
+  display: flex;
+  align-items: center;
+}
+.form_username input[type="radio"] {
+  display: none;
+}
+.form_username label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 3rem;
+  user-select: none;
+}
+.form_username label:before {
+  content: "";
+  display: inline-block;
+  width: 1.125rem;
+  height: 1.125rem;
+  border: #94066b 0.125rem solid;
+  position: absolute;
+  left: 1rem;
+}
+/* Checked */
+.form_username input[type="radio"]:checked + label:before {
+  background-color: #94066b;
+}
+
+/* Chat child */
+.chat_child {
+  border-bottom: 1px solid #94066b;
+}
+.child_profile {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  position: relative;
+}
+.profile_avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.profile_name {
+  margin-left: 1rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.child_comment {
+  margin-top: 1rem;
+}
+.child_comment::before {
+  content: "\201c";
+  margin-right: 0.3rem;
+}
+.child_comment::after {
+  content: "\201d";
+  margin-left: 0.3rem;
+}
+
+.child_comment_timing {
+  display: inline-block;
+  position: absolute;
+  right: 2rem;
+  color: #94066b;
+}
+
+.hide {
+  display: none;
+}

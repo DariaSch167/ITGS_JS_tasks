@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://www.svgrepo.com/show/94016/freesia.svg"
+      type="image/svg" />
+    <title>Chat task</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main__body_wrapper">
+      <h1>Сервис комментариев со спам-фильтром</h1>
+      <div class="wrapper">
+        <div class="wrapper_form">
+          <h2>Оставьте ваш комментарий</h2>
+          <form>
+            <div class="form_username">
+              <p class="form_label">Показывать ваше имя?</p>
+              <input
+                type="radio"
+                id="form_yes_answer"
+                name="username_answer"
+                value="yes"
+                onclick="hideUserName()"
+                checked />
+              <label for="form_yes_answer">Да</label>
+              <input
+                type="radio"
+                id="form_no_answer"
+                name="username_answer"
+                value="no"
+                onclick="hideUserName()" />
+              <label for="form_no_answer">Нет</label>
+            </div>
+            <div class="form_name_wrapper">
+              <p class="form_label">Введите ваше имя:</p>
+              <input type="text" name="user_name" id="form_name" />
+            </div>
+            <p class="form_label">Добавьте ссылку на ваш аватар:</p>
+            <input type="text" name="img_link" id="form_img_link" />
+            <p class="form_label">Оставьте комментарий:</p>
+            <textarea
+              name="comment"
+              id="form_comment"
+              cols="30"
+              rows="8"></textarea>
+          </form>
+          <button id="form_send">Отправить</button>
+        </div>
+        <div class="wrapper_chat">
+          <h2>Чат</h2>
+          <div class="chat" id="chat_parent">
+            <!-- Пример карточки чата -->
+            <!-- <div class="chat_child">
+            <div class="child_profile">
+              <img
+                class="profile_avatar"
+                src="https://sun9-9.userapi.com/impg/c858520/v858520574/129cd3/wMnYtGkSCXI.jpg?size=320x213&quality=96&crop=127,0,946,630&sign=e0074bc22b0a9eff7e4a6e50d05e27a9&c_uniq_tag=wj-yHtbpFz3mZo73eq6nv752iyNDxuY6DF2lGT02KiI&type=album"
+                alt="аватар" />
+              <p class="profile_name">иван</p>
+              <p class="child_comment_timing">11.02.2024, 23:26:27</p>
+            </div>
+            <p class="child_comment">Привет! Что тут кто делает?</p>
+          </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
