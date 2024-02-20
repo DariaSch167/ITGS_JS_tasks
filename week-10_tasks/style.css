@@ -1,0 +1,47 @@
+body {
+  width: 70vw;
+}
+/* .task_description {
+  width: 70vw;
+} */
+span {
+  color: palevioletred;
+}
+img {
+  width: 50%;
+}
+h2,
+h3 {
+  margin-top: 3rem;
+}
+
+.gallery1__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.gallery2__wrapper {
+  position: relative;
+}
+.gallery2__slider {
+  display: flex;
+  justify-content: center;
+}
+#gallery2_prev {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+}
+
+#gallery2_next {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+}
+
+.product-card__price {
+  display: flex;
+}
+.product-card__price p {
+  padding-right: 0.25rem;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW_part2</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Практическая часть</h1>
+    <h2>Задание №2</h2>
+    <p>
+      Создайте страницу, подключите скрипт. Создайте функцию, которая выведет
+      сообщение в консоли <span>«Я учу JavaScript!»</span>.
+    </p>
+    <h2>Задание №3</h2>
+    <p>Создайте галерею переключения изображений.</p>
+    <p>
+      В ней будет две кнопки: вперёд и назад, которые должны переключать
+      изображение (в галерее пока будет 2 картинки, но если можете больше, то
+      делайте).
+    </p>
+    <h3>Вариант 1 (2 картинки)</h3>
+    <div class="gallery1__wrapper">
+      <button id="gallery_prev1" onclick="prev1()">&larr; Назад</button>
+      <img id="gallery__image1" src="./images/cat_1.png" alt="cat" />
+      <button id="gallery_next1" onclick="next1()">Вперед &rarr;</button>
+    </div>
+    <h3>Вариант 2 (4 картинки)</h3>
+    <div class="gallery2__wrapper">
+      <div class="gallery2__slider">
+        <img src="./images/cat_4.png" alt="fluffy cat" />
+        <img src="./images/cat_3.png" alt="grey cat" />
+        <img src="./images/cat_2.png" alt="stretchy cat" />
+        <img src="./images/cat_1.png" alt="anxious cat" />
+      </div>
+      <button id="gallery2_prev" onclick="showPreviousSlide()">
+        &larr; Назад
+      </button>
+      <button id="gallery2_next" onclick="showNextSlide()">
+        Вперед &rarr;
+      </button>
+    </div>
+    <h2>Задание под звёздочкой</h2>
+    <div class="product-card__wrapper">
+    <div class="product-card__description">
+      <h3>Гирлянда праздничная на день рождения декор - Котики</h3>
+      <p>
+        Гирлянда котики, украшение для вашего праздника - бумажная фигурная
+        гирлянда котики многоразового использования длиной 250 см.
+      </p>
+      <img id= "cat_decor_pic" src="./images/cat_decor_change.png" alt="cat decor" onclick="changeMe()" />
+    </div>
+    <div class="product-card__price">
+      <p>Стоимость:</p>
+      <p class="price">192</p>
+      <p>руб.</p>
+    </div>
+    <div class="product-card__order">
+    <p>Введите количество к покупке:</p>
+    <input type="number" name="quantity" class="quantity"></input>
+    <button class="product-card__button" onclick="calculateTotalPrice()">Рассчитать</button>
+    <p>Итого: <span class="product-card__total"></span> </p>
+    </div>
+  </div>
+    <!-- Скрипт от задания №2 -->
+    <script>
+      function message(text) {
+        console.log(text);
+      }
+      message("Я учу JavaScript!");
+    </script>
+    <!-- Скрипт от задания №3 - 1ый вариант - 2 картинки-->
+    <script>
+      let gallery__image1 = document.getElementById("gallery__image1");
+      function next1() {
+        gallery__image1.src = "./images/cat_2.png";
+      }
+      function prev1() {
+        gallery__image1.src = "./images/cat_1.png";
+      }
+    </script>
+    <!-- Скрипт от задания №3 - 2ой вариант - 4 картинки -->
+    <script src="script_gallery.js"></script>
+    <!-- Скрипт от задания под звёздочкой -->
+    <script src="script_star.js"></script>
+  </body>
+</html>
