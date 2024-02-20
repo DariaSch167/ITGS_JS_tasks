@@ -1,0 +1,41 @@
+h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.task_wrapper,
+.task_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.task_input,
+.task_add-button {
+  font-size: 1rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 1rem;
+}
+.task_input {
+  margin-right: 0.5rem;
+}
+.task_add-button {
+  background-color: bisque;
+}
+.task_form {
+  padding: 1rem 2rem;
+}
+.task_list {
+  background-color: bisque;
+  min-width: 30vw;
+  min-height: 50vh;
+  border-radius: 1rem;
+  padding-top: 1rem;
+}
+.task_list li {
+  font-size: 1rem;
+  padding: 0.3rem;
+}
+.task_done {
+  text-decoration: line-through;
+  color: grey;
+}
