@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(backHB_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 16px;
+}
+
+.calc_wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-left: 7rem;
+  background-color: transparent;
+}
+h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+.calc_form {
+  margin-top: 1rem;
+}
+#form_button {
+  background-color: rgb(192, 125, 125);
+  margin-left: 1rem;
+}
+#form_button:active {
+  background-color: rgb(234, 136, 71);
+}
+#form_date,
+#form_button {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  border-color: transparent;
+  outline: transparent;
+}
+
+.calc_alarm {
+  color: rgb(191, 85, 85);
+}
+
+.calc_result {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
