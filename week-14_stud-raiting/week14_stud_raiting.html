@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students Raiting</title>
+    <link rel="stylesheet" href="week14_stud_raiting.css" />
+  </head>
+  <body>
+    <h1>Анализ оценок студентов</h1>
+    <div class="students_grades_wraper">
+      <div class="grades_info_wrapper">
+        <h2>Оценки студентов</h2>
+        <div id="grades_info"></div>
+      </div>
+      <div class="grades_analyse_wrapper">
+        <h2>Анализ оценок</h2>
+        <p>Средний балл студентов: <span id="grades_average"></span></p>
+        <p>Максимальный балл среди студентов: <span id="grades_max"></span></p>
+        <p>Минимальный балл среди студентов: <span id="grades_min"></span></p>
+        <p>
+          Количество студентов с положительной оценкой (выше 60 баллов):
+          <span id="grades_positive"></span>
+        </p>
+        <p>
+          Количество студентов с негативной оценкой (ниже 60 баллов):
+          <span id="grades_negative"></span>
+        </p>
+      </div>
+    </div>
+    <script src="week14_stud_raiting.js"></script>
+  </body>
+</html>

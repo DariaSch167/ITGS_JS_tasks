@@ -1,0 +1,70 @@
+body {
+  background-image: url("BG_1_pop_corn.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1 {
+  color: rgb(255, 200, 98);
+  font-size: 2rem;
+  text-align: center;
+}
+h2 {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.card_wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, 30%);
+  grid-template-rows: repeat(3, auto-fit);
+}
+
+.card_director {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: rgb(255, 200, 98);
+  border-radius: 0.125rem;
+  padding: 1.5rem;
+  margin: 1.5rem;
+}
+.card_director:hover {
+  background-color: bisque;
+}
+.director_name {
+  padding: 0px;
+  margin: 0px;
+  font-size: 1.5rem;
+}
+.director_info {
+  font-size: 0.75rem;
+  padding: 0;
+  height: 2rem;
+  margin: 0.5rem 0;
+}
+.director_filmography {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-top: 1.875rem;
+  font-size: 0.875rem;
+  transition: 0.2s;
+}
+.director_filmography:hover {
+  font-size: larger;
+}
+
+.film_wrapper {
+  color: rgb(236, 234, 234);
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+}
+.film_names {
+  color: rgb(255, 200, 98);
+  font-size: 1rem;
+  width: 50vw;
+  color: white;
+}
