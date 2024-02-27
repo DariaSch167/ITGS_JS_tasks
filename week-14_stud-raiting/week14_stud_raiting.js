@@ -56,7 +56,7 @@ negativeGradesNumber.textContent = negativeGrades.length;
 // § Если оценка находится в диапазоне от 20 до 39, преобразуйте её в "D"
 // Если оценка ниже 20, преобразуйте её в "E"
 
-studentsGrades.forEach(function (grade) {
+studentsGrades.forEach(function (grade, index) {
   let alphabetGrades =
     grade >= 80
       ? "A"
@@ -71,7 +71,7 @@ studentsGrades.forEach(function (grade) {
   const gradeNumber = document.createElement("span");
 
   studentNumber.textContent = `Оценка студента ${
-    studentsGrades.indexOf(grade) + 1
+    index + 1
   }: `;
   gradesBlock.append(studentNumber);
 
