@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://www.svgrepo.com/show/295677/wave.svg"
+      type="image/svg" />
+    <title>Adriatic temperature</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Температура в городах Адриатического побережья</h1>
+    <p class="temp_date__wrapper">
+      Передать данные по температуре за: <span id="temp_date"></span>
+    </p>
+    <button id="temp_send">Передать значения</button>
+    <div class="city_card__wrapper">
+      <!-- Пример карточки города - данные из массива -->
+      <!-- <div class="city_card">
+        <img class="city_pic" src="./citi_ulcinj.jpg" alt="Ulcinj" />
+        <h2 class="city_name">Ulcinj</h2>
+        <p class="city_temp">
+          Температура: <span class="temp_info">+ 25</span> °С
+        </p> -->
+        <!-- Конец карточки -->
+      </div>
+    </div>
+    <p class="temp_max__wrapper hide">
+      Максимальная температура на побережье:
+      <span id="temp_max">No info</span>
+    </p>
+    <p class="temp_min__wrapper hide">
+      Минимальная температура на побережье:
+      <span id="temp_min">No info</span>
+    </p>
+    <script src="script_task2_weather.js"></script>
+    <script src="script_task3_star.js"></script>
+  </body>
+</html>

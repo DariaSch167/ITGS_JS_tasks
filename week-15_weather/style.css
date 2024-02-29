@@ -1,0 +1,71 @@
+body {
+  background-image: url(./coastline_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.temp_date__wrapper {
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+#temp_date {
+  font-weight: bold;
+}
+#temp_send {
+  margin-left: 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(17, 75, 85);
+  text-transform: uppercase;
+  border-color: transparent;
+  outline: transparent;
+}
+
+.city_card__wrapper {
+  margin: 2rem;
+  display: grid;
+  grid-gap: 1.5rem;
+  justify-content: space-around;
+  grid-template-columns: repeat(auto-fit, 20%);
+  grid-template-rows: repeat(3, auto-fit);
+}
+.city_card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 0.125rem;
+  background-color: white;
+}
+.city_pic {
+  border-radius: 0.125rem;
+}
+.city_name {
+  align-self: center;
+  font-size: 1.5rem;
+}
+.city_temp {
+  font-size: 1.25rem;
+}
+.temp_info {
+  font-weight: bold;
+}
+
+.temp_max__wrapper,
+.temp_min__wrapper {
+  margin: 1rem 2rem 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+.hide {
+  display: none;
+}
